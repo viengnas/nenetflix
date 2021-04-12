@@ -1,0 +1,16 @@
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+}
+
+h1 {
+	color: black;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-image: url("images/mainbg.jpg");
+	background-repeat: repeat;
+}
