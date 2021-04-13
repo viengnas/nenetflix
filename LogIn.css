@@ -20,7 +20,7 @@
   margin: auto;
   padding: 0;
   border: 1px solid #888;
-  width: 80%;
+  width: 40%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
@@ -39,6 +39,20 @@
   to {top:0; opacity:1}
 }
 
+/* The Close1 Button */
+.close1 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 /* The Close Button */
 .close {
   color: white;
@@ -57,7 +71,7 @@
 .modal-header {
   padding: 2px 16px;
   background-color: black;
-  color: white;
+  color: red;
 }
 
 .modal-body {padding: 2px 16px;}

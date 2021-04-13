@@ -27,18 +27,15 @@
 
         <!-- Trigger/Open The Modal -->
         <button1 id="myBtn">Prisijungti</button1>
-
         <!-- The Modal -->
         <div id="myModal" class="modal">
-
             <!-- Modal content -->
             <div class="modal-content">
                 <div class="modal-header">
                     <span class="close">&times;</span>
-                    <h2>Prisijungimas</h2>
+                    <h2 style="color:white;">Prisijungimas</h2>
                 </div>
                 <div class="modal-body">
-
                     <label for="uname"><b>Vartotojo vardas</b></label>
                     <input type="text" placeholder="Įrašyti vardą" name="uname" required>
                     <div>
@@ -49,16 +46,42 @@
                     <label>
                         <!--<input type="checkbox" checked="checked" name="remember"> Remember me-->
                     </label>
-
                 </div>
-
             </div>
-
         </div>
         <script src="./loginScript.js">
         </script>
-
-        <a href="#">Registruotis</a>
+        <a></a>
+        <!-- Trigger/Open The Modal -->
+        <button1 id="myBtn1">Registruotis</button1>
+        <!-- The Modal -->
+        <div id="myModal1" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close1">&times;</span>
+                    <h2 style="color:white;">Registracija</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                        <div>
+                            <label for="eml"><b>E-paštas</b></label>
+                            <input type="text" placeholder="Įrašyti E-paštą" name="eml" required>
+                        </div>
+                    </div>
+                    <button type="submit">Registruotis</button>
+                    <label>
+                        <!--<input type="checkbox" checked="checked" name="remember"> Remember me-->
+                    </label>
+                </div>
+            </div>
+        </div>
+        <script src="./register.js">
+        </script>
         <hr />
         <a href="#">Apie</a>
         <a href="#">Kontaktai</a>
