@@ -1,16 +1,97 @@
+/* Rutuliukai naudojami fono animacijai */
 .ball {
-    position: absolute;
+    position: fixed;
     border-radius: 100%;
     opacity: 0.7;
 }
 
-h1 {
+h1, h2 {
 	color: black;
 	text-align: center;
 	font-family: "Roboto", sans-serif;
 }
 
+p {
+	color: white;
+	font-famliy: "Roboto", sans-serif;
+}
+
 body {
 	background-image: url("images/mainbg.jpg");
 	background-repeat: repeat;
+}
+
+/* Sidebar meniu css */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Filmų išdėstymo kvadratais css */
+.square-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  position: relative;
+  flex-basis: calc(25% - 100px);
+  margin: 18px;
+  border: 1px solid;
+  box-sizing: border-box;
+}
+
+.square::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.square .content {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.square .movimg1 {
+  position: absolute;
+  top: 0; left: 0;
+  background-image:url("images/test.png");
+  height: 100%;
+  width: 100%;
 }

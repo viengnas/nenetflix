@@ -39,3 +39,12 @@ balls.forEach((el, i, ra) => {
     }
   );
 });
+
+// sidebar stuff
+function openNav() {
+  document.getElementById("meniu").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("meniu").style.width = "0";
+}
