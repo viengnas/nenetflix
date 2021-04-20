@@ -9,8 +9,8 @@ NeNetflix yra NeKomanda komandos KTU "Komandinis darbas informacinių sistemų p
 **NeKomanda**
 
 - Andželika Dapkevičiūtė, IFA-9/1;
-- Domantas Vazgys, IFA-9/2.
-- Ignas Kviliūnas, IFA-9/2;
+- Domantas Vazgys, IFA-9/2;
+- Ignas Kviliūnas, IFA-9/2.
 
 ## Nuoroda
 

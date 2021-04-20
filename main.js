@@ -40,6 +40,8 @@ balls.forEach((el, i, ra) => {
   );
 });
 
+var content = document.querySelector('link[rel="import"]').import;
+
 // sidebar stuff
 function openNav() {
   document.getElementById("meniu").style.width = "250px";

@@ -74,7 +74,9 @@
   color: red;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+}
 
 .modal-footer {
   padding: 2px 16px;
@@ -83,18 +85,12 @@
 }
 
 button1 {
-  background: none!important;
-  border: none;
-  padding: 0!important;
-  
-  /*optional*/
-  position: relative;
-  left: 35px;
-  font-size: 22px;
-  /*input has OS specific font-family*/
-  color: gray;
-  cursor: pointer;
-  transition-duration: 0.4s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
 button1:hover {

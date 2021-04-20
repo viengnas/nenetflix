@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-
-    <link rel="stylesheet" href="./LogIn.css">
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>NeNetflix</title>
@@ -16,143 +14,55 @@
     <script src="./main.js">
     </script>
 
+<div id="meniu" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="./images/logosmall.png" alt="NeNetflix">
+    <a href="./index.html">Pradžia</a>
+    <hr />
+    <a href="#">Rasti filmą</a>
+    <a href="#">Paieška</a>
+    <hr />
 
-    <div id="meniu" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <img src="images/logosmall.png" alt="NeNetflix">
-        <hr />
-        <a href="#">Rasti filmą</a>
-        <a href="#">Paieška</a>
-        <hr />
-
-        <!-- Trigger/Open The Modal -->
-        <button1 id="myBtn">Prisijungti</button1>
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2 style="color:white;">Prisijungimas</h2>
+    <!-- Trigger/Open The Modal -->
+    <button1 id="myBtn">Prisijungti</button1>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="color:white;">Prisijungimas</h2>
+            </div>
+            <div class="modal-body">
+                <label for="uname"><b>Vartotojo vardas</b></label>
+                <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                <div>
+                    <label for="psw"><b>Slaptažodis</b></label>
+                    <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
                 </div>
-                <div class="modal-body">
-                    <label for="uname"><b>Vartotojo vardas</b></label>
-                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
-                    <div>
-                        <label for="psw"><b>Slaptažodis</b></label>
-                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
-                    </div>
-                    <button type="submit">Prisijungti</button>
-                    <label>
-                        <!--<input type="checkbox" checked="checked" name="remember"> Remember me-->
-                    </label>
-                </div>
+                <button type="submit">Prisijungti</button>
             </div>
         </div>
-        <script src="./loginScript.js">
-        </script>
-        <a></a>
-        <!-- Trigger/Open The Modal -->
-        <button1 id="myBtn1">Registruotis</button1>
-        <!-- The Modal -->
-        <div id="myModal1" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close1">&times;</span>
-                    <h2 style="color:white;">Registracija</h2>
-                </div>
-                <div class="modal-body">
-                    <label for="uname"><b>Vartotojo vardas</b></label>
-                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
-                    <div>
-                        <label for="psw"><b>Slaptažodis</b></label>
-                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
-                        <div>
-                            <label for="eml"><b>E-paštas</b></label>
-                            <input type="text" placeholder="Įrašyti E-paštą" name="eml" required>
-                        </div>
-                    </div>
-                    <button type="submit">Registruotis</button>
-                    <label>
-                        <!--<input type="checkbox" checked="checked" name="remember"> Remember me-->
-                    </label>
-                </div>
-            </div>
-        </div>
-        <script src="./register.js">
-        </script>
-        <hr />
-        <a href="#">Apie</a>
-        <a href="#">Kontaktai</a>
-        <hr />
-        <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
     </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <script src="./login.js">
+    </script>
+    <a href="#">Registruotis</a>
+    <hr />
+    <a href="./apie.html">Apie</a>
+    <a href="#">Kontaktai</a>
+    <hr />
+    <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
     <h1>NeNetflix - jau greitai</h1>
     <h2>Savaitės rekomendacijos</h2>
-    <div class="square-container">
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-        <div class="square">
-            <div class="movimg1"></div>
-        </div>
-
-    </div>
+    <div class="grid-container">
+        <div><a href="./0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>
+        <div><a href="./0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>
+        <div><a href="./0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>  
+        <div><a href="./0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>
+        <div><a href="./0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>
+      </div>
 </body>
 </html>
