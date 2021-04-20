@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="lt">
 <head>
     <meta charset="UTF-8">
@@ -55,14 +55,33 @@
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-    <h1>NeNetflix - jau greitai</h1>
-    <h2>Savaitės rekomendacijos</h2>
-    <div class="grid-container">
-        <div><a href="./0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>
-        <div><a href="./0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>
-        <div><a href="./0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>  
-        <div><a href="./0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>
-        <div><a href="./0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>
-      </div>
+<h1>Susisiekite su NeNetflix</h1>
+<p class="generalText">Norėdami „NeNetflix“ komandai pasiūlyti naujų funkcijų, pranešti 
+    apie paslaugoje esančias klaidas, arba manote, kad jūsų autorinės teisės buvo pažeistos, 
+    susisiekite su mūsų komanda naudodamiesi žemiau aprašyta forma:
+</p>
+<h2>Kontaktų forma</h2>
+    <label for="fname">Jūsų vardas</label>
+    <input type="text" id="fname" name="firstname" placeholder="Vardas...">
+
+    <label for="lname">Pavardė</label>
+    <input type="text" id="lname" name="lastname" placeholder="Pavardė...">
+
+    <label for="email">El. Paštas</label>
+    <input type="text" id="email" name="lastname" placeholder="Pavardė...">
+
+    <label for="reason">Susisiekimo priežastis</label>
+    <select id="reason" name="reason">
+      <option value="features">Naujų funkcijų pasiūlymas paslaugai</option>
+      <option value="errors">Problemos, matomos paslaugoje</option>
+      <option value="copyright">Autorinių teisių pažeidimas</option>
+      <option value="other">Kita priežastis</option>
+    </select>
+
+    <p>Jūsų pranešimas</p>
+    <textarea name="userinput" cols="100" rows="20">Įveskite savo žinutę čia</textarea>
+
+    <input type="submit" onclick="alert('Jūsų žinutė gauta. Į pastebėjimus atsakysime netrukus.')" value="Pateikti">
+
 </body>
 </html>
