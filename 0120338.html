@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+    <script src="./main.js"></script>
+
+    <div id="meniu" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="./images/logosmall.png" alt="NeNetflix">
+        <a href="./index.html">Pradžia</a>
+        <hr />
+        <a href="./rekomendacijos.html">Rasti filmą</a>
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="searchButton">Paieška</button>
+        <!-- The Modal -->
+        <div id="searchModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+                    <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+                    <!-- čia bus redirect į lempinį filmą (fake search) -->
+                    <button onclick="location.href='./0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="loginButton">Prisijungti</button>
+        <!-- The Modal -->
+        <div id="loginModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">Prisijungimas</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                    </div>
+                    <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                    <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Prisijungti</button>
+                </div>
+            </div>
+        </div>
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="registerButton">Registruotis</button>
+        <!-- The Modal -->
+        <div id="registerModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">Registracija</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                        <div>
+                            <label for="email"><b>El. Paštas</b></label>
+                            <input type="text" placeholder="vardas@pastas.lt" name="email" required>
+                        </div>
+                    </div>
+                    <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                    <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Registruoti paskyrą</button>
+                </div>
+            </div>
+        </div>
+        <script src="./popups.js"></script>
+        <hr />
+        <a href="./apie.html">Apie</a>
+        <a href="./kontaktai.html">Kontaktai</a>
+        <hr />
+        <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h1>NeNetflix</h1>
+    <div class="grid-container">
+        <div><img class="poster" src="./images/0120338.jpg"></div>
+        <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/b0KYvGa_nN8"></iframe></div>
+        <h2>
+            Titanic<p class="summary">
+                A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.<br /><br />
+                Direktorius: James Cameron<br />
+                Filmo trukmė: 3h 14m<br />
+                Išleidimo data: 1997-12-19<br />
+                Žanras: Drama, Romantinis <br />
+            </p>
+        </h2>
+    </div>
+    <hr />
+    <table>
+        <tr>
+            <th>Vardas</th>
+            <th>Veikėjas</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000138">Leonardo DiCaprio</a></td>
+            <td>Jack Dawson</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000701">Kate Winslet</a></td>
+            <td>Rose Dewitt Bukater</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000708">Billy Zane</a></td>
+            <td>Cal Hockley</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000870">Kathy Bates</a></td>
+            <td>Molly Brown</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0004920">Frances Fisher</a></td>
+            <td>Ruth Dewitt Bukater</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0001784">Gloria Stuart</a></td>
+            <td>Old Rose</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000200">Bill Paxton</a></td>
+            <td>Brock Lovett</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0384060">Bernard Hill</a></td>
+            <td>Captain Smith</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0001831">David Warner</a></td>
+            <td>Spicer Lovejoy</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0001255">Victor Garber</a></td>
+            <td>Thomas Andrews</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0404993">Jonathan Hyde</a></td>
+            <td>Bruce Ismay</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000751">Suzy Amis</a></td>
+            <td>Lizzy Calvert</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0008656">Lewis Abernathy</a></td>
+            <td>Lewis Bodine</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0143167">Nicholas Cascone</a></td>
+            <td>Bobby Buell</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0755972">Anatoly M. Sagalevitch</a></td>
+            <td>Anatoly Milkailavich</td>
+        </tr>
+    </table>
+    <h2>Filmo siužetas</h2>
+    <p>
+        84 years later, a 100 year-old woman named Rose DeWitt Bukater tells the story to her
+        granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich
+        on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose
+        boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater,
+        and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best
+        friend Fabrizio De Rossi win third-class tickets to the ship in a game.
+    </p>
+    <hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 8/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>75</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 7.8/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 4/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $200,000,000 (apytiksliai)</p>
+    <p class="generalText"><b>Atidarymo savaitę uždirbo:</b> $28,638,131</p>
+    <p class="generalText"><b>Bendras pelnas JAV:</b> $659,363,944</p>
+    <p class="generalText"><b>Bendras pelnas įskaitant užsienį:</b> $2,201,647,264</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt0120338/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <p>Prisijunkite prie savo paskyros, norėdami žiūrėti vartotojų komentarus.</p>
+</body>
+</html>

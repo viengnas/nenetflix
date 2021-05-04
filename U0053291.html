@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="stylesheet" href="./comments.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+    <script src="./main.js"></script>
+
+    <div id="meniu" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="./images/logosmall.png" alt="NeNetflix">
+        <a href="./index.html">Pradžia</a>
+        <hr />
+        <a href="./rekomendacijos.html">Rasti filmą</a>
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="searchButton">Paieška</button>
+        <!-- The Modal -->
+        <div id="searchModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+                    <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+                    <!-- čia bus redirect į lempinį filmą (fake search) -->
+                    <button onclick="location.href='./0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="loginButton">Prisijungti</button>
+        <!-- The Modal -->
+        <div id="loginModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">Prisijungimas</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                    </div>
+                    <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                    <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Prisijungti</button>
+                </div>
+            </div>
+        </div>
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="registerButton">Registruotis</button>
+        <!-- The Modal -->
+        <div id="registerModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">Registracija</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                        <div>
+                            <label for="email"><b>El. Paštas</b></label>
+                            <input type="text" placeholder="vardas@pastas.lt" name="email" required>
+                        </div>
+                    </div>
+                    <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                    <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Registruoti paskyrą</button>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <a href="./apie.html">Apie</a>
+        <a href="./kontaktai.html">Kontaktai</a>
+        <hr />
+        <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h1>NeNetflix</h1>
+    <div class="grid-container">
+        <div><img class="poster" src="./images/0053291.jpg"></div>
+        <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/rI_lUHOCcbc"></iframe></div>
+        <h2>
+            Some Like It Hot<p class="summary">
+                After two male musicians witness a mob hit, they flee the state in an all-female band disguised as women,
+                but further complications set in.<br /><br />
+                Direktorius: Billy Wilder<br />
+                Filmo trukmė: 2h 1m<br />
+                Išleidimo data: 1959-03-19<br />
+                Žanras: Komedija, Muzika<br />
+            </p>
+            <button class="buttonWatch" id="watchButton"><i class="fa fa-eye"></i> Žiūrėti filmą</button>
+            <button onclick="location.href='./index.html'" class="buttonDownload" type="button"><i class="fa fa-download"></i> Atsisiųsti filmą</button>
+        </h2>
+    </div>
+    <div id="watchModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-body">
+                <div>
+                    <hr />
+                    <iframe style="border: none; width: 100%; height: 500px;" src="https://www.youtube.com/embed/rI_lUHOCcbc"></iframe>
+                    <hr />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./popups.js"></script>
+    <hr />
+    <table>
+        <tr>
+            <th>Vardas</th>
+            <th>Veikėjas</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000054">Marilyn Monroe</a></td>
+            <td>Sugar Kane Kowalczyk</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000348">Tony Curtis</a></td>
+            <td>Joe / Josephine / Shell Oil Junior</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000493">Jack Lemmon</a></td>
+            <td>Jerry / Daphne</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0706368">George Raft</a></td>
+            <td>Spats Colombo</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0002285">Pat O'Brien</a></td>
+            <td>Detective Mulligan</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0113873">Joe E. Brown</a></td>
+            <td>Osgood Fielding III</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0675490">Nehemiah Persoff</a></td>
+            <td>Little Bonaparte</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0790064">Joan Shawlee</a></td>
+            <td>Sweet Sue</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0336475">Billy Gray</a></td>
+            <td>Sig Poliakoff</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0831889">George E. Stone</a></td>
+            <td>Toothpick Charlie</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0057969">Dave Barry</a></td>
+            <td>Bienstock</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0563417">Mike Mazurki</a></td>
+            <td>Spats' Henchman</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0448590">Harry Wilson</a></td>
+            <td>Spats' Henchman</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0932617">Beverly Wills</a></td>
+            <td>Dolores</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0237634">Barbara Drew</a></td>
+            <td>Nellie</td>
+        </tr>
+    </table>
+    <h2>Filmo siužetas</h2>
+    <p>
+        After two Chicago musicians, Joe and Jerry, witness the the St. Valentine's Day massacre, they want to
+        get out of town and get away from the gangster responsible, Spats Colombo. They're desperate to get a gig
+        out of town but the only job they know of is in an all-girl band heading to Florida. They show up at the train
+        station as Josephine and Daphne, the replacement saxophone and bass players. They certainly enjoy being around the girls,
+        especially Sugar Kane Kowalczyk who sings and plays the ukulele. Joe in particular sets out to woo her while Jerry/Daphne
+        is wooed by a millionaire, Osgood Fielding III. Mayhem ensues as the two men try to keep their true identities hidden and
+        Spats Colombo and his crew show up for a meeting with several other crime lords.
+    </p>
+    <hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 9/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>98</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 8,2/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 4/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $2,883,848 (apytiksliai)</p>
+    <p class="generalText"><b>Bendras pelnas įskaitant užsienį:</b> $195,088</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt0053291/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <!-- comments container -->
+    <div class="comment_block">
+        <!-- used by #{user} to create a new comment -->
+        <div class="create_new_comment">
+            <!-- current #{user} avatar -->
+            <div class="user_avatar">
+                <img src="./images/avatar1.png">
+            </div><!-- the input field --><div class="input_comment">
+                <input type="text" placeholder="Rašykite komentarą...">
+            </div>
+        </div>
+
+        <!-- new comment -->
+        <div class="new_comment">
+            <!-- build comment -->
+            <ul class="user_comment">
+                <!-- current #{user} avatar -->
+                <div class="user_avatar">
+                    <img src="./images/avatar2.png">
+                </div><!-- the comment body -->
+                <div class="comment_body">
+                    <p>Visai nieko filmas</p>
+                </div>
+                <!-- comments toolbar -->
+                <div class="comment_toolbar">
+                    <!-- inc. date and time -->
+                    <div class="comment_details">
+                        <ul>
+                            <li><i class="fa fa-clock-o"></i> 13:27</li>
+                            <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                            <li><i class="fa fa-pencil"></i> <span class="user">Ignė</span></li>
+                        </ul>
+                    </div><!-- inc. share/reply and love --><div class="comment_tools">
+                        <ul>
+                            <li><i class="fa fa-share-alt"></i></li>
+                            <li><i class="fa fa-reply"></i></li>
+                            <li><i class="fa fa-heart love"></i></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <!-- end of comment -->
+        <!-- new comment -->
+        <div class="new_comment">
+            <!-- build comment -->
+            <ul class="user_comment">
+                <!-- current #{user} avatar -->
+                <div class="user_avatar">
+                    <img src="./images/avatar1.png">
+                </div><!-- the comment body -->
+                <div class="comment_body">
+                    <p>10/10, toks smagus.</p>
+                </div>
+                <!-- comments toolbar -->
+                <div class="comment_toolbar">
+                    <!-- inc. date and time -->
+                    <div class="comment_details">
+                        <ul>
+                            <li><i class="fa fa-clock-o"></i> 13:28</li>
+                            <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                            <li><i class="fa fa-pencil"></i> <span class="user">Ignas</span></li>
+                        </ul>
+                    </div><!-- inc. share/reply and love --><div class="comment_tools">
+                        <ul>
+                            <li><i class="fa fa-share-alt"></i></li>
+                            <li><i class="fa fa-reply"></i></li>
+                            <li><i class="fa fa-heart love"></i></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <!-- end of comment -->
+    </div>
+</body>
+</html>

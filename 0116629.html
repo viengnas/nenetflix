@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+    <script src="./main.js"></script>
+
+    <div id="meniu" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="./images/logosmall.png" alt="NeNetflix">
+        <a href="./index.html">Pradžia</a>
+        <hr />
+        <a href="./rekomendacijos.html">Rasti filmą</a>
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="searchButton">Paieška</button>
+        <!-- The Modal -->
+        <div id="searchModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+                    <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+                    <!-- čia bus redirect į lempinį filmą (fake search) -->
+                    <button onclick="location.href='./0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="loginButton">Prisijungti</button>
+        <!-- The Modal -->
+        <div id="loginModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">Prisijungimas</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                    </div>
+                    <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                    <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Prisijungti</button>
+                </div>
+            </div>
+        </div>
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="registerButton">Registruotis</button>
+        <!-- The Modal -->
+        <div id="registerModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">Registracija</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                        <div>
+                            <label for="email"><b>El. Paštas</b></label>
+                            <input type="text" placeholder="vardas@pastas.lt" name="email" required>
+                        </div>
+                    </div>
+                    <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                    <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Registruoti paskyrą</button>
+                </div>
+            </div>
+        </div>
+        <script src="./popups.js"></script>
+        <hr />
+        <a href="./apie.html">Apie</a>
+        <a href="./kontaktai.html">Kontaktai</a>
+        <hr />
+        <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h1>NeNetflix</h1>
+    <div class="grid-container">
+        <div><img class="poster" src="./images/0116629.jpg"></div>
+        <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/B1E7h3SeMDk"></iframe></div>
+        <h2>
+            Independence Day<p class="summary">
+                The aliens are coming and their goal is to invade and destroy Earth. Fighting
+                superior technology, mankind's best weapon is the will to survive.<br />
+                Filmo trukmė: 2h 25m<br />
+                Išleidimo data: 1996-07-03<br />
+                Žanras: Veiksmo, Sci-Fi<br />
+            </p>
+        </h2>
+    </div>
+    <hr />
+    <table>
+        <tr>
+            <th>Vardas</th>
+            <th>Veikėjas</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000226">Will Smith</a></td>
+            <td>Capt. Steven Hiller</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000597">Bill Pullman</a></td>
+            <td>President Thomas J. Whitmore</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000156">Jeff Goldblum</a></td>
+            <td>David Levinson</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0001521">Mary McDonnell</a></td>
+            <td>Marilyn Whitmore</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0002139">Judd Hirsch</a></td>
+            <td>Julius Levinson</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0005162">Robert Loggia</a></td>
+            <td>General William Grey</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0001642">Randy Quaid</a></td>
+            <td>Russell Casse</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0171513">Margaret Colin</a></td>
+            <td>Constance Spano</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0714310">James Rebhorn</a></td>
+            <td>Albert Nimziki</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0001213">Harvey Fierstein</a></td>
+            <td>Marty Gilbert</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000284">Adam Baldwin</a></td>
+            <td>Major Mitchell</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000653">Brent Spiner</a></td>
+            <td>Dr. Brakish Okun</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0001166">James Duval</a></td>
+            <td>Miguel</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000407">Vivica A. Fox</a></td>
+            <td>Jasmine Dubrow</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0004356">Lisa Jakub</a></td>
+            <td>Alicia</td>
+        </tr>
+    </table>
+    <h2>Filmo siužetas</h2>
+    <p>
+        On July 2nd, communications systems worldwide are sent into chaos by a strange atmospheric interference.
+        It is soon learned by the military that a number of enormous objects are on a collision course with Earth.
+        At first thought to be meteors, they are later revealed to be gigantic spacecraft, piloted by a mysterious
+        alien species. After attempts to communicate with the aliens go nowhere, David Levinson, an ex-scientist
+        turned cable technician, discovers that the aliens are going to attack major points around the globe in
+        less than a day.
+    </p>
+    <hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 6/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>59</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 7/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 2.5/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $75,000,000 (apytiksliai)</p>
+    <p class="generalText"><b>Atidarymo savaitę uždirbo:</b> $50,228,264</p>
+    <p class="generalText"><b>Bendras pelnas JAV:</b> $306,169,268</p>
+    <p class="generalText"><b>Bendras pelnas įskaitant užsienį:</b> $817,400,891</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt0116629/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <p>Prisijunkite prie savo paskyros, norėdami žiūrėti vartotojų komentarus.</p>
+</body>
+</html>
