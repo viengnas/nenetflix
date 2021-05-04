@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="stylesheet" href="./comments.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+<script src="./main.js"></script>
+
+<div id="meniu" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="./images/logosmall.png" alt="NeNetflix">
+    <a href="./index.html">Pradžia</a>
+    <hr />
+    <a href="./rekomendacijos.html">Rasti filmą</a>
+    <!-- Trigger/Open The Modal -->
+    <button class="button buttonSidebar" id="searchButton">Paieška</button>
+    <!-- The Modal -->
+    <div id="searchModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+            </div>
+            <div class="modal-body">
+                <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+                <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+                <!-- čia bus redirect į lempinį filmą (fake search) -->
+                <button onclick="location.href='./0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <!-- Trigger/Open The Modal -->
+    <button class="button buttonSidebar" id="loginButton">Prisijungti</button>
+    <!-- The Modal -->
+    <div id="loginModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="color:white;">Prisijungimas</h2>
+            </div>
+            <div class="modal-body">
+                <label for="uname"><b>Vartotojo vardas</b></label>
+                <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                <div>
+                    <label for="psw"><b>Slaptažodis</b></label>
+                    <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                </div>
+                <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Prisijungti</button>
+            </div>
+        </div>
+    </div>
+    <!-- Trigger/Open The Modal -->
+    <button class="button buttonSidebar" id="registerButton">Registruotis</button>
+    <!-- The Modal -->
+    <div id="registerModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="color:white;">Registracija</h2>
+            </div>
+            <div class="modal-body">
+                <label for="uname"><b>Vartotojo vardas</b></label>
+                <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                <div>
+                    <label for="psw"><b>Slaptažodis</b></label>
+                    <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                    <div>
+                        <label for="email"><b>El. Paštas</b></label>
+                        <input type="text" placeholder="vardas@pastas.lt" name="email" required>
+                    </div>
+                </div>
+                <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Registruoti paskyrą</button>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <a href="./apie.html">Apie</a>
+    <a href="./kontaktai.html">Kontaktai</a>
+    <hr />
+    <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<h1>NeNetflix</h1>
+<div class="grid-container">
+    <div><img class="poster" src="./images/0109830.jpg"></div>
+    <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/XHhAG-YLdk8"></iframe></div>
+    <h2>Forrest Gump<p class="summary">The presidencies of Kennedy and Johnson, 
+        the Vietnam War, the Watergate scandal and other historical events unfold 
+        from the perspective of an Alabama man with an IQ of 75.<br /><br />
+        Direktorius: Robert Zemeckis<br />
+        Filmo trukmė: 2h 22m<br />
+        Išleidimo data: 1994-07-06<br />
+        Žanras: Drama, Romantika<br /></p>
+        <button class="buttonWatch" id="watchButton"><i class="fa fa-eye"></i> Žiūrėti filmą</button>
+        <button class="buttonDownload"><i class="fa fa-download"></i> Atsisiųsti filmą</button>
+    </h2>
+  </div>
+<div id="watchModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-body">
+          <div>
+            <hr />
+            <iframe style="border: none; width: 100%; height: 500px;" src="https://www.youtube.com/embed/XHhAG-YLdk8"></iframe>
+            <hr />
+          </div>
+        </div>
+    </div>
+</div>
+<script src="./popups.js"></script>
+  <hr />
+  <table>
+    <tr>
+      <th>Vardas</th>
+      <th>Veikėjas</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.imdb.com/name/nm0000158">Tom Hanks</a></td>
+	  <td>Forrest Gump</td>
+	</tr>
+	<tr>
+      <td><a href="https://www.imdb.com/name/nm0931508">Rebecca Williams</a></td>
+	  <td>Nurse at Park Bench</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0000398">Sally Field</a></td>
+	  <td>Mrs. Gump</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0402011">Michael Conner Humphreys</a></td>
+	  <td>Young Forrest</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0381041">Harold G. Herthum</a></td>
+	  <td>Doctor (as himself)</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0446404">George Kelly</a></td>
+	  <td>Barber</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0672225">Bob Penny</a></td>
+	  <td>Crony</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0709615">John Randall</a></td>
+	  <td>Crony</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0027402">Sam Anderson</a></td>
+	  <td>Principal</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0602071">Margo Moorer</a></td>
+	  <td>Louise</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0854295">Ione M. Telech</a></td>
+	  <td>Elderly Woman</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0780410">Christine Seabrook</a></td>
+	  <td>Elderly Woman's Daughter</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0941621">John Worsham</a></td>
+	  <td>Southern Gentleman / Landowner</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0229930">Peter Dobson</a></td>
+	  <td>Young Elvis Presley</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0266441">Siobhan Fallon Hogan</a></td>
+	  <td>School Bus Driver (as herself)</td>
+	</tr>
+  </table>
+  <h2>Filmo siužetas</h2>
+  <p>Slow-witted Forrest Gump, a man of 75 IQ has never thought of himself as disadvantaged, 
+      and thanks to his supportive mother, he leads anything but a restricted life. 
+      Whether dominating the field as a college football star, fighting in Vietnam 
+      or captaining a shrimp boat, Forrest inspires people with his childlike optimism. 
+      But one person Forrest cares about most may be the most difficult to save -- his childhood 
+      love, the sweet but troubled Jenny.</p>
+	<hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 9/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>82</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 8,8/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 4/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $55,000,000 (apytiksliai)</p>
+    <p class="generalText"><b>Atidarymo savaitę uždirbo:</b> $24,450,602</p>
+    <p class="generalText"><b>Bendras pelnas JAV:</b> $330,455,270</p>
+    <p class="generalText"><b>Bendras pelnas įskaitant užsienį:</b> $678,226,133</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt0109830/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <!-- comments container -->
+    <div class="comment_block">
+        <!-- used by #{user} to create a new comment -->
+        <div class="create_new_comment">
+         <!-- current #{user} avatar -->
+          <div class="user_avatar">
+            <img src="./images/avatar1.png">
+          </div><!-- the input field --><div class="input_comment">
+            <input type="text" placeholder="Rašykite komentarą...">
+          </div>
+        </div>
+  
+  
+        <!-- new comment -->
+        <div class="new_comment">
+         <!-- build comment -->
+          <ul class="user_comment">
+            <!-- current #{user} avatar -->
+            <div class="user_avatar">
+              <img src="./images/avatar2.png">
+            </div><!-- the comment body --><div class="comment_body">
+              <p>Mano mėgstamiausias filmas!!!!!!</p>
+            </div>
+            <!-- comments toolbar -->
+            <div class="comment_toolbar">
+              <!-- inc. date and time -->
+              <div class="comment_details">
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> 13:27</li>
+                  <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                  <li><i class="fa fa-pencil"></i> <span class="user">Ignė</span></li>
+                </ul>
+              </div><!-- inc. share/reply and love --><div class="comment_tools">
+                <ul>
+                  <li><i class="fa fa-share-alt"></i></li>
+                  <li><i class="fa fa-reply"></i></li>
+                  <li><i class="fa fa-heart love"></i></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- end of comment -->
+  
+        <!-- new comment -->
+        <div class="new_comment">
+          <!-- build comment -->
+           <ul class="user_comment">
+             <!-- current #{user} avatar -->
+             <div class="user_avatar">
+               <img src="./images/avatar1.png">
+             </div><!-- the comment body --><div class="comment_body">
+               <p>10/10.</p>
+             </div>
+             <!-- comments toolbar -->
+             <div class="comment_toolbar">
+               <!-- inc. date and time -->
+               <div class="comment_details">
+                 <ul>
+                   <li><i class="fa fa-clock-o"></i> 13:28</li>
+                   <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                   <li><i class="fa fa-pencil"></i> <span class="user">Ignas</span></li>
+                 </ul>
+               </div><!-- inc. share/reply and love --><div class="comment_tools">
+                 <ul>
+                   <li><i class="fa fa-share-alt"></i></li>
+                   <li><i class="fa fa-reply"></i></li>
+                   <li><i class="fa fa-heart love"></i></li>
+                 </ul>
+               </div>
+             </div>
+         </div>
+         <!-- end of comment -->
+       </div>
+</body>
+</html>

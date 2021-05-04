@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="stylesheet" href="./comments.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+<script src="./main.js"></script>
+
+<div id="meniu" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="./images/logosmall.png" alt="NeNetflix">
+    <a href="./index.html">Pradžia</a>
+    <hr />
+    <a href="./rekomendacijos.html">Rasti filmą</a>
+    <!-- Trigger/Open The Modal -->
+    <button class="button buttonSidebar" id="searchButton">Paieška</button>
+    <!-- The Modal -->
+    <div id="searchModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+            </div>
+            <div class="modal-body">
+                <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+                <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+                <!-- čia bus redirect į lempinį filmą (fake search) -->
+                <button onclick="location.href='./0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+    <!-- Trigger/Open The Modal -->
+    <button class="button buttonSidebar" id="loginButton">Prisijungti</button>
+    <!-- The Modal -->
+    <div id="loginModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="color:white;">Prisijungimas</h2>
+            </div>
+            <div class="modal-body">
+                <label for="uname"><b>Vartotojo vardas</b></label>
+                <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                <div>
+                    <label for="psw"><b>Slaptažodis</b></label>
+                    <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                </div>
+                <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Prisijungti</button>
+            </div>
+        </div>
+    </div>
+    <!-- Trigger/Open The Modal -->
+    <button class="button buttonSidebar" id="registerButton">Registruotis</button>
+    <!-- The Modal -->
+    <div id="registerModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="color:white;">Registracija</h2>
+            </div>
+            <div class="modal-body">
+                <label for="uname"><b>Vartotojo vardas</b></label>
+                <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                <div>
+                    <label for="psw"><b>Slaptažodis</b></label>
+                    <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                    <div>
+                        <label for="email"><b>El. Paštas</b></label>
+                        <input type="text" placeholder="vardas@pastas.lt" name="email" required>
+                    </div>
+                </div>
+                <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Registruoti paskyrą</button>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <a href="./apie.html">Apie</a>
+    <a href="./kontaktai.html">Kontaktai</a>
+    <hr />
+    <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<h1>NeNetflix</h1>
+<div class="grid-container">
+    <div><img class="poster" src="./images/0266697.jpg"></div>
+    <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/7kSuas6mRpk"></iframe></div>
+    <h2>Kill Bill: Vol. 1<p class="summary">After awakening from a four-year coma, 
+        a former assassin wreaks vengeance on the team of assassins who betrayed her.<br /><br />
+        Direktorius: Quentin Tarantino<br />
+        Filmo trukmė: 1h 51m<br />
+        Išleidimo data: 2003-10-07<br />
+        Žanras: Veiksmo, Drama<br /></p>
+        <button class="buttonWatch" id="watchButton"><i class="fa fa-eye"></i> Žiūrėti filmą</button>
+        <button class="buttonDownload"><i class="fa fa-download"></i> Atsisiųsti filmą</button>
+    </h2>
+  </div>
+  <div id="watchModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-body">
+          <div>
+            <hr />
+            <iframe style="border: none; width: 100%; height: 500px;" src="https://www.youtube.com/embed/7kSuas6mRpk"></iframe>
+            <hr />
+          </div>
+        </div>
+    </div>
+</div>
+  <script src="./popups.js"></script>
+  <hr />
+  <table>
+    <tr>
+      <th>Vardas</th>
+      <th>Veikėjas</th>
+    </tr>
+    <tr>
+      <td><a href="https://www.imdb.com/name/nm0000235">Uma Thurman</a></td>
+	  <td>The Bride</td>
+	</tr>
+	<tr>
+      <td><a href="https://www.imdb.com/name/nm0005154">Lucy Liu</a></td>
+	  <td>O-Ren Ishii</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0000407">Vivica A. Fox</a></td>
+	  <td>Vernita Green</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0000435">Daryl Hannah</a></td>
+	  <td>Elle Driver</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0001016">David Carradine</a></td>
+	  <td>Bill</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0000514">Michael Madsen</a></td>
+	  <td>Budd</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0237838">Julie Dreyfus</a></td>
+	  <td>Sofie Fatale</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0475752">Chiaki Kuriyama</a></td>
+	  <td>Gogo Yubari</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0002002">Shin'ichi Chiba</a></td>
+	  <td>Hattori Hanzo</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0514904">Chia-Hui Liu</a></td>
+	  <td>Johnny Mo</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0662981">Michael Parks</a></td>
+	  <td>Earl McGraw</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0100889">Michael Bowen</a></td>
+	  <td>Buck</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0475165">Jun Kunimura</a></td>
+	  <td>Boss Tanaka</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0644979">Kenji Ohba</a></td>
+	  <td>Bald Guy</td>
+	</tr>
+	<tr>
+	  <td><a href="https://www.imdb.com/name/nm0443569">Yuki Kazamatsuri</a></td>
+	  <td>Proprietor</td>
+	</tr>
+  </table>
+  <h2>Filmo siužetas</h2>
+  <p>"The Bride" was the deadliest assassin of the Deadly Viper Assassination Squad, 
+      until the day she decided to leave the business, assume a new identity, and get 
+      married. But it was on the day of her marriage that her old "friends" - O-Ren Ishii, 
+      Vernita Green, Budd, and Elle Driver, not to mention her boss, Bill - find her and 
+      assassinate the entire ceremony while Bill shoots her in the head, putting her in a coma. 
+      Well, they should have tried a little harder.</p>
+	<hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 9,1/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>69</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 8,1/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 4/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $30,000,000 (apytiksliai)</p>
+    <p class="generalText"><b>Atidarymo savaitę uždirbo:</b> $22,200,000</p>
+    <p class="generalText"><b>Bendras pelnas JAV:</b> $70,099,045</p>
+    <p class="generalText"><b>Bendras pelnas įskaitant užsienį:</b> $180,906,076</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt0266697/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <!-- comments container -->
+    <div class="comment_block">
+        <!-- used by #{user} to create a new comment -->
+        <div class="create_new_comment">
+         <!-- current #{user} avatar -->
+          <div class="user_avatar">
+            <img src="./images/avatar1.png">
+          </div><!-- the input field --><div class="input_comment">
+            <input type="text" placeholder="Rašykite komentarą...">
+          </div>
+        </div>
+  
+  
+        <!-- new comment -->
+        <div class="new_comment">
+         <!-- build comment -->
+          <ul class="user_comment">
+            <!-- current #{user} avatar -->
+            <div class="user_avatar">
+              <img src="./images/avatar2.png">
+            </div><!-- the comment body --><div class="comment_body">
+              <p>Mano mėgstamiausias filmas!!!!!!</p>
+            </div>
+            <!-- comments toolbar -->
+            <div class="comment_toolbar">
+              <!-- inc. date and time -->
+              <div class="comment_details">
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> 13:27</li>
+                  <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                  <li><i class="fa fa-pencil"></i> <span class="user">Ignė</span></li>
+                </ul>
+              </div><!-- inc. share/reply and love --><div class="comment_tools">
+                <ul>
+                  <li><i class="fa fa-share-alt"></i></li>
+                  <li><i class="fa fa-reply"></i></li>
+                  <li><i class="fa fa-heart love"></i></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- end of comment -->
+  
+        <!-- new comment -->
+        <div class="new_comment">
+          <!-- build comment -->
+           <ul class="user_comment">
+             <!-- current #{user} avatar -->
+             <div class="user_avatar">
+               <img src="./images/avatar1.png">
+             </div><!-- the comment body --><div class="comment_body">
+               <p>10/10.</p>
+             </div>
+             <!-- comments toolbar -->
+             <div class="comment_toolbar">
+               <!-- inc. date and time -->
+               <div class="comment_details">
+                 <ul>
+                   <li><i class="fa fa-clock-o"></i> 13:28</li>
+                   <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                   <li><i class="fa fa-pencil"></i> <span class="user">Ignas</span></li>
+                 </ul>
+               </div><!-- inc. share/reply and love --><div class="comment_tools">
+                 <ul>
+                   <li><i class="fa fa-share-alt"></i></li>
+                   <li><i class="fa fa-reply"></i></li>
+                   <li><i class="fa fa-heart love"></i></li>
+                 </ul>
+               </div>
+             </div>
+         </div>
+         <!-- end of comment -->
+       </div>
+</body>
+</html>

@@ -40,8 +40,6 @@ balls.forEach((el, i, ra) => {
   );
 });
 
-var content = document.querySelector('link[rel="import"]').import;
-
 // sidebar stuff
 function openNav() {
   document.getElementById("meniu").style.width = "250px";
@@ -49,4 +47,10 @@ function openNav() {
 
 function closeNav() {
   document.getElementById("meniu").style.width = "0";
+}
+
+//contact page redirect
+function submitContact() {
+  alert('Jūsų žinutė gauta.\nĮ pastebėjimus atsakysime netrukus.');
+  location.href='./index.html';
 }

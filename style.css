@@ -1,3 +1,4 @@
+/* Šriftų CSS */
 h1, h2 {
 	color: black;
 	text-align: center;
@@ -7,7 +8,7 @@ h1, h2 {
 p {
 	color: #2b2b2b;
   font-size: 16px;
-	font-famliy: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 .summary {
@@ -28,6 +29,7 @@ p span {
   padding: 8px;
 }
 
+/* Nuotraukų ir fono nuotraukos CSS */
 img.about {
   border-radius: 16px;
   padding: 4px;
@@ -41,12 +43,35 @@ img.poster {
   height: 100%;
 }
 
+.recImage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.recMiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.recContainer:hover .recImage {
+  opacity: 0.3;
+}
+
 body {
 	background-image: url("./images/mainbg.jpg");
 	background-repeat: repeat;
 }
 
-/* Sidebar meniu css */
+/* Sidebar meniu CSS */
 .sidenav {
   height: 100%;
   width: 0;
@@ -86,11 +111,12 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+/* 5 nuotraukų grid CSS */
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   grid-gap: 10px;
-  background-color: #3e4f5e;
+  background-color: #6c7f91;
   padding: 10px;
   justify-content: space-evenly;
 }
@@ -99,6 +125,7 @@ body {
   border: 2px solid black;
 }
 
+/* Lentelių CSS */
 table {
   border-collapse: collapse;
   float: left;
@@ -116,14 +143,20 @@ th {
 }
 
 tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #bebebe;
+}
+
+tr:nth-child(odd) {
+  background-color: #949494;
 }
 
 tr:hover {
   background-color: #ddd;
 }
 
-input[type=text], input[type=password], select {
+/* Input box CSS */
+input[type=text], input[type=password], select, textarea {
+  background-color: #cedff0;
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -155,4 +188,62 @@ input[type=submit]:hover {
   opacity: 0.7;
   margin-bottom: 20px;
   z-index: -1;
+}
+
+/* CSS rekomendacijų puslapiui */
+.recContainer {
+  position: relative;
+  width: 50%;
+}
+
+.recMiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.recContainer:hover .recMiddle {
+  opacity: 1;
+}
+
+.recText {
+  background-color: #7e8b7f9c;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+/* CSS mygtukams, esantiems ne sidebar */
+.buttonWatch {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.buttonWatch:hover {
+  background-color: RoyalBlue;
+}
+
+/* CSS mygtukams, esantiems ne sidebar */
+.buttonDownload {
+  background-color: #4EE44E;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.buttonDownload:hover {
+  background-color: #36b336;
 }
