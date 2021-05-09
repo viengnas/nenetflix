@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+    <script src="./main.js"></script>
+
+    <div id="meniu" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="./images/logosmall.png" alt="NeNetflix">
+        <a href="./index.html">Pradžia</a>
+        <hr />
+        <a href="./rekomendacijos.html">Rasti filmą</a>
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="searchButton">Paieška</button>
+        <!-- The Modal -->
+        <div id="searchModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+                    <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+                    <!-- čia bus redirect į lempinį filmą (fake search) -->
+                    <button onclick="location.href='./0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="loginButton">Prisijungti</button>
+        <!-- The Modal -->
+        <div id="loginModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">Prisijungimas</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                    </div>
+                    <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                    <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Prisijungti</button>
+                </div>
+            </div>
+        </div>
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="registerButton">Registruotis</button>
+        <!-- The Modal -->
+        <div id="registerModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">Registracija</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                        <div>
+                            <label for="email"><b>El. Paštas</b></label>
+                            <input type="text" placeholder="vardas@pastas.lt" name="email" required>
+                        </div>
+                    </div>
+                    <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                    <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Registruoti paskyrą</button>
+                </div>
+            </div>
+        </div>
+        <script src="./popups.js"></script>
+        <hr />
+        <a href="./apie.html">Apie</a>
+        <a href="./kontaktai.html">Kontaktai</a>
+        <hr />
+        <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h1>NeNetflix</h1>
+    <div class="grid-container">
+        <div><img class="poster" src="./images/0387564.jpg"></div>
+        <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/S-1QgOMQ-ls"></iframe></div>
+        <h2>
+            Saw<p class="summary">
+                Two strangers awaken in a room with no recollection of how they got there, and soon
+                discover they're pawns in a deadly game perpetrated by a notorious serial killer.<br /><br />
+                Direktorius: James Wan<br />
+                Filmo trukmė: 1h 43m<br />
+                Išleidimo data: 2004-10-29<br />
+                Žanras: Siaubo<br />
+            </p>
+        </h2>
+    </div>
+    <hr />
+    <table>
+        <tr>
+            <th>Vardas</th>
+            <th>Veikėjas</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm1191481">Leigh Whannell</a></td>
+            <td>Adam Faulkner-Stanheight</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000144">Cary Elwes</a></td>
+            <td>Dr. Lawrence Gordon</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000418">Danny Glover</a></td>
+            <td>Detective David Tapp</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0504962">Ken Leung</a></td>
+            <td>Detective Steven Sing</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000539">Dina Meyer</a></td>
+            <td>Kerry</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0125320">Mike Butters</a></td>
+            <td>Paul</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0349673">Paul Gutrecht</a></td>
+            <td>Mark</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0256237">Michael Emerson</a></td>
+            <td>Zep Hindle</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0553468">Benito Martinez</a></td>
+            <td>Brett</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0809938">Shawnee Smith</a></td>
+            <td>Amanda</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0891863">Makenzie Vega</a></td>
+            <td>Diana Gordon</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0005321">Monica Potter</a></td>
+            <td>Alison Gordon</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0068709">Ned Bellamy</a></td>
+            <td>Jeff</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0159017">Alexandra Bokyun Chun</a></td>
+            <td>Carla (as Alexandra Chun)</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0304982">Avner Garbi</a></td>
+            <td>Father</td>
+        </tr>
+    </table>
+    <h2>Filmo siužetas</h2>
+    <p>
+        Waking up in a bathroom, two men, Adam and Dr. Lawrence Gordon, discover they
+        have been captured by the infamous Jigsaw Killer. The men must escape before time
+        runs out, otherwise, they will face the deadly consequences.
+    </p>
+    <hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 6,3/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>46</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 7,6/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 2/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $1,200,000 (apytiksliai)</p>
+    <p class="generalText"><b>Atidarymo savaitę uždirbo:</b> $18,276,468</p>
+    <p class="generalText"><b>Bendras pelnas JAV:</b> $56,000,369</p>
+    <p class="generalText"><b>Bendras pelnas įskaitant užsienį:</b> $103,911,669</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt0387564/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <p>Prisijunkite prie savo paskyros, norėdami žiūrėti vartotojų komentarus.</p>
+</body>
+</html>
