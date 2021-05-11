@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+<script src="./main.js"></script>
+
+<div id="meniu" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <img src="./images/logosmall.png" alt="NeNetflix">
+    <hr />
+    <p class="generalText">Sveiki, Ignas. <i class="fa fa-id-badge"></i></p>
+    <a href="./Uprofile.html">Jūsų profilis</a>
+    <a href="./index.html">Atsijungti</a>
+    <hr />
+    <a href="./Uindex.html">Pradžia</a>
+    <a href="./Urekomendacijos.html">Rasti filmą</a>
+    <!-- Trigger/Open The Modal -->
+    <button class="button buttonSidebar" id="searchButton">Paieška</button>
+    <!-- The Modal -->
+    <div id="searchModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+            </div>
+            <div class="modal-body">
+                <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+                <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+                <!-- čia bus redirect į lempinį filmą (fake search) -->
+                <button onclick="location.href='./U0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+            </div>
+        </div>
+    </div>
+    <script src="./popupLoggedIn.js"></script>
+    <hr />
+    <a href="./Uapie.html">Apie</a>
+    <a href="./Ukontaktai.html">Kontaktai</a>
+    <hr />
+    <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<h1>NeNetflix<br />Filmų rekomendacijos</h1>
+<h2>Kai nežinote būtent kokio filmo norite, tačiau norite</h2>
+<p class="generalText">
+    „NeNetflix“ žino tą jausmą, kai pagaliau randi sau laiko pažiūrėti kokį nors filmą, 
+    tačiau taip ir nesugebi surasti to non-descript šedevro, esančio galvoje, kuris patenkintų tavo poreikius. 
+    Būtent todėl „NeNetflix“ siūlo filmų rekomendacijas pagal seniau patikusius filmus, pagal patinkančius žanrus ir dar daugiau.
+</p>
+<hr />
+<h2>Rekomendacijos pagal...</h2>
+<div class="grid-container">
+    <div class="recContainer">
+        <a href="./0111161.html"><img class="recImage" src="./images/bygenre.jpg">
+        <div class="recMiddle">
+            <div class="recText">Pasirinktus žanrus</div>
+        </div>
+        </a>
+    </div>
+    <div class="recContainer">
+        <a href="./0111161.html"><img class="recImage" src="./images/bywatched.jpg">
+        <div class="recMiddle">
+            <div class="recText">Anksčiau peržiūrėtus</div>
+        </div>
+        </a>
+    </div>
+    <div class="recContainer">
+        <a href="./0111161.html"><img class="recImage" src="./images/byliked.jpg">
+        <div class="recMiddle">
+            <div class="recText">Anksčiau patikusius</div>
+        </div>
+        </a>
+    </div>
+    <div class="recContainer">
+        <a href="./0111161.html"><img class="recImage" src="./images/byspecialday.jpg">
+        <div class="recMiddle">
+            <div class="recText">Šiandienos progą</div>
+        </div>
+        </a>
+    </div>
+    <div class="recContainer">
+        <a href="./0111161.html"><img class="recImage" src="./images/byrating.jpg">
+        <div class="recMiddle">
+            <div class="recText">Filmo reitingus</div>
+        </div>
+        </a>
+    </div>
+</div>
+<h2>„NeNetflix“ savaitės rekomendacijos ir nauji filmai randami pradiniame puslapyje.</h2>
+</body>

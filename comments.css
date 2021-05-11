@@ -62,12 +62,12 @@
 	padding: 5px 10px;
 	font-size: 0.9rem;
 	color: #555;
-	background-color: #cedff0;
+	background-color: #cecece;
 	border-bottom: 2px solid #f2f2f2;
 }
 .comment_block .new_comment .comment_body .replied_to {
 	margin: 5px 0px;
-	background-color: #cedff0;
+	background-color: #cecece;
 	border-bottom: 2px solid #f2f2f2;
 	border-radius: 5px;
 }

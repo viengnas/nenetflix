@@ -15,84 +15,38 @@
 <script src="./main.js"></script>
 
 <div id="meniu" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <img src="./images/logosmall.png" alt="NeNetflix">
-    <a href="./index.html">Pradžia</a>
-    <hr />
-    <a href="./rekomendacijos.html">Rasti filmą</a>
-    <!-- Trigger/Open The Modal -->
-    <button class="button buttonSidebar" id="searchButton">Paieška</button>
-    <!-- The Modal -->
-    <div id="searchModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
-            </div>
-            <div class="modal-body">
-                <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
-                <input type="text" placeholder="The Shawshank Redemption" name="search" required>
-                <!-- čia bus redirect į lempinį filmą (fake search) -->
-                <button onclick="location.href='./0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
-            </div>
-        </div>
-    </div>
-    <hr />
-
-    <!-- Trigger/Open The Modal -->
-    <button class="button buttonSidebar" id="loginButton">Prisijungti</button>
-    <!-- The Modal -->
-    <div id="loginModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2 style="color:white;">Prisijungimas</h2>
-            </div>
-            <div class="modal-body">
-                <label for="uname"><b>Vartotojo vardas</b></label>
-                <input type="text" placeholder="Įrašyti vardą" name="uname" required>
-                <div>
-                    <label for="psw"><b>Slaptažodis</b></label>
-                    <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
-                </div>
-                <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
-                <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Prisijungti</button>
-            </div>
-        </div>
-    </div>
-    <!-- Trigger/Open The Modal -->
-    <button class="button buttonSidebar" id="registerButton">Registruotis</button>
-    <!-- The Modal -->
-    <div id="registerModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <div class="modal-header">
-                <span class="close">&times;</span>
-                <h2 style="color:white;">Registracija</h2>
-            </div>
-            <div class="modal-body">
-                <label for="uname"><b>Vartotojo vardas</b></label>
-                <input type="text" placeholder="Įrašyti vardą" name="uname" required>
-                <div>
-                    <label for="psw"><b>Slaptažodis</b></label>
-                    <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
-                    <div>
-                        <label for="email"><b>El. Paštas</b></label>
-                        <input type="text" placeholder="vardas@pastas.lt" name="email" required>
-                    </div>
-                </div>
-                <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
-                <button onclick="location.href='./index.html'" class="button buttonSidebarSubmit" type="button">Registruoti paskyrą</button>
-            </div>
-        </div>
-    </div>
-    <hr />
-    <a href="./apie.html">Apie</a>
-    <a href="./kontaktai.html">Kontaktai</a>
-    <hr />
-    <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="./images/logosmall.png" alt="NeNetflix">
+  <hr />
+  <p class="generalText">Sveiki, Ignas. <i class="fa fa-id-badge"></i></p>
+  <a href="./Uprofile.html">Jūsų profilis</a>
+  <a href="./index.html">Atsijungti</a>
+  <hr />
+  <a href="./Uindex.html">Pradžia</a>
+  <a href="./Urekomendacijos.html">Rasti filmą</a>
+  <!-- Trigger/Open The Modal -->
+  <button class="button buttonSidebar" id="searchButton">Paieška</button>
+  <!-- The Modal -->
+  <div id="searchModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+          </div>
+          <div class="modal-body">
+              <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+              <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+              <!-- čia bus redirect į lempinį filmą (fake search) -->
+              <button onclick="location.href='./U0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+          </div>
+      </div>
+  </div>
+  <hr />
+  <a href="./Uapie.html">Apie</a>
+  <a href="./Ukontaktai.html">Kontaktai</a>
+  <hr />
+  <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
@@ -122,7 +76,7 @@
         </div>
     </div>
 </div>
-<script src="./popups.js"></script>
+<script src="./popupLoggedIn.js"></script>
   <hr />
   <table>
     <tr>
@@ -233,7 +187,7 @@
           <div class="user_avatar">
             <img src="./images/avatar2.png">
           </div><!-- the comment body --><div class="comment_body">
-            <p>Mano mėgstamiausias filmas!!!!!!</p>
+            <p class="summary">Mano mėgstamiausias filmas!!!!!!</p>
           </div>
           <!-- comments toolbar -->
           <div class="comment_toolbar">
@@ -263,7 +217,7 @@
            <div class="user_avatar">
              <img src="./images/avatar1.png">
            </div><!-- the comment body --><div class="comment_body">
-             <p>10/10.</p>
+             <p class="summary">10/10.</p>
            </div>
            <!-- comments toolbar -->
            <div class="comment_toolbar">
