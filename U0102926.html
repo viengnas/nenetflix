@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="stylesheet" href="./comments.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+<script src="./main.js"></script>
+
+<div id="meniu" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="./images/logosmall.png" alt="NeNetflix">
+  <hr />
+  <p class="generalText">Sveiki, Ignas. <i class="fa fa-id-badge"></i></p>
+  <a href="./Uprofile.html">Jūsų profilis</a>
+  <a href="./index.html">Atsijungti</a>
+  <hr />
+  <a href="./Uindex.html">Pradžia</a>
+  <a href="./Urekomendacijos.html">Rasti filmą</a>
+  <!-- Trigger/Open The Modal -->
+  <button class="button buttonSidebar" id="searchButton">Paieška</button>
+  <!-- The Modal -->
+  <div id="searchModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+          </div>
+          <div class="modal-body">
+              <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+              <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+              <!-- čia bus redirect į lempinį filmą (fake search) -->
+              <button onclick="location.href='./U0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+          </div>
+      </div>
+  </div>
+  <hr />
+  <a href="./Uapie.html">Apie</a>
+  <a href="./Ukontaktai.html">Kontaktai</a>
+  <hr />
+  <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<h1>NeNetflix</h1>
+<div class="grid-container">
+    <div><img class="poster" src="./images/0102926.jpg"></div>
+    <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/W6Mm8Sbe__o"></iframe></div>
+    <h2>The Silence of the Lambs<p class="summary">
+            A young F.B.I. cadet must receive the help of an incarcerated and manipulative
+            cannibal killer to help catch another serial killer, a madman who skins his victims.<br /><br />
+            Direktorius: Jonathan Demme<br />
+            Filmo trukmė: 1h 58m<br />
+            Išleidimo data: 1991-02-14<br />
+            Žanras: Kriminalinis, trileris <br />
+        </p>
+        <button class="buttonWatch" id="watchButton"><i class="fa fa-eye"></i> Žiūrėti filmą</button>
+        <button onclick="location.href='./index.html'" class="buttonDownload" type="button"><i class="fa fa-download"></i> Atsisiųsti filmą</button>
+    </h2>
+  </div>
+  <div id="watchModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-body">
+          <div>
+            <hr />
+            <iframe style="border: none; width: 100%; height: 500px;" src="https://www.youtube.com/embed/W6Mm8Sbe__o"></iframe>
+            <hr />
+          </div>
+        </div>
+    </div>
+</div>
+<script src="./popupLoggedIn.js"></script>
+  <hr />
+  <table>
+      <tr>
+          <th>Vardas</th>
+          <th>Veikėjas</th>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0000149">Jodie Foster</a></td>
+          <td>Clarice Starling</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0095029">Lawrence A. Bonney</a></td>
+          <td>FBI Instructor</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0501435">Kasi Lemmons</a></td>
+          <td>Ardelia Mapp</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0942145">Lawrence T. Wrentz</a></td>
+          <td>Agent Burroughs</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0001277">Scott Glenn</a></td>
+          <td>Jack Crawford</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0372217">Anthony Heald</a></td>
+          <td>Dr. Frederick Chilton</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0265670">Frankie Faison</a></td>
+          <td>Barney</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0110667">Don Brockett</a></td>
+          <td>Friendly Psychopath</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0780557">Frank Seals Jr.</a></td>
+          <td>Brooding Psychopath</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0748785">Stuart Rudin</a></td>
+          <td>Miggs</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0000164">Anthony Hopkins</a></td>
+          <td>Dr. Hannibal Lecter</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0804705">Maria Skorobogatov</a></td>
+          <td>Young Clarice</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm1508029">Jeffrie Lane</a></td>
+          <td>Clarice's Father</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0502229">Leib Lensky</a></td>
+          <td>Harbor Master</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0777230">George 'Red' Schwartz</a></td>
+          <td>Mr. Lang's Driver</td>
+      </tr>
+  </table>
+  <h2>Filmo siužetas</h2>
+  <p>
+        F.B.I. trainee Clarice Starling (Jodie Foster) works hard to advance her career,
+        while trying to hide or put behind her West Virginia roots, of which if some knew,
+        would automatically classify her as being backward or white trash. After graduation,
+        she aspires to work in the agency's Behavioral Science Unit under the leadership of
+        Jack Crawford (Scott Glenn). While she is still a trainee, Crawford asks her to
+        question Dr. Hannibal Lecter (Sir Anthony Hopkins), a psychiatrist imprisoned, thus
+        far, for eight years in maximum security isolation for being a serial killer who
+        cannibalized his victims.
+    </p>
+    <hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 7,2/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>85</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 8,6/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 4/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $19,000,000 (apytiksliai)</p>
+    <p class="generalText"><b>Atidarymo savaitę uždirbo:</b> $13,766,814</p>
+    <p class="generalText"><b>Bendras pelnas JAV:</b> $130,742,922</p>
+    <p class="generalText"><b>Bendras pelnas įskaitant užsienį:</b> $272,742,922</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt0102926/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <!-- comments container -->
+    <div class="comment_block">
+        <!-- used by #{user} to create a new comment -->
+        <div class="create_new_comment">
+         <!-- current #{user} avatar -->
+          <div class="user_avatar">
+            <img src="./images/avatar1.png">
+          </div><!-- the input field --><div class="input_comment">
+            <input type="text" placeholder="Rašykite komentarą...">
+          </div>
+        </div>
+  
+        <!-- new comment -->
+        <div class="new_comment">
+         <!-- build comment -->
+          <ul class="user_comment">
+            <!-- current #{user} avatar -->
+            <div class="user_avatar">
+              <img src="./images/avatar2.png">
+            </div><!-- the comment body --><div class="comment_body">
+              <p class="summary">Mano mėgstamiausias filmas!!!!!!</p>
+            </div>
+            <!-- comments toolbar -->
+            <div class="comment_toolbar">
+              <!-- inc. date and time -->
+              <div class="comment_details">
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> 13:27</li>
+                  <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                  <li><i class="fa fa-pencil"></i> <span class="user">Ignė</span></li>
+                </ul>
+              </div><!-- inc. share/reply and love --><div class="comment_tools">
+                <ul>
+                  <li><i class="fa fa-share-alt"></i></li>
+                  <li><i class="fa fa-reply"></i></li>
+                  <li><i class="fa fa-heart love"></i></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- end of comment -->
+  
+        <!-- new comment -->
+        <div class="new_comment">
+          <!-- build comment -->
+           <ul class="user_comment">
+             <!-- current #{user} avatar -->
+             <div class="user_avatar">
+               <img src="./images/avatar1.png">
+             </div><!-- the comment body --><div class="comment_body">
+               <p class="summary">10/10.</p>
+             </div>
+             <!-- comments toolbar -->
+             <div class="comment_toolbar">
+               <!-- inc. date and time -->
+               <div class="comment_details">
+                 <ul>
+                   <li><i class="fa fa-clock-o"></i> 13:28</li>
+                   <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                   <li><i class="fa fa-pencil"></i> <span class="user">Ignas</span></li>
+                 </ul>
+               </div><!-- inc. share/reply and love --><div class="comment_tools">
+                 <ul>
+                   <li><i class="fa fa-share-alt"></i></li>
+                   <li><i class="fa fa-reply"></i></li>
+                   <li><i class="fa fa-heart love"></i></li>
+                 </ul>
+               </div>
+             </div>
+         </div>
+         <!-- end of comment -->
+    </div>
+</body>
+</html>

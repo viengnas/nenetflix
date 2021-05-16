@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+    <script src="./main.js"></script>
+
+    <div id="meniu" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="./images/logosmall.png" alt="NeNetflix">
+        <a href="./index.html">Pradžia</a>
+        <hr />
+        <a href="./rekomendacijos.html">Rasti filmą</a>
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="searchButton">Paieška</button>
+        <!-- The Modal -->
+        <div id="searchModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+                    <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+                    <!-- čia bus redirect į lempinį filmą (fake search) -->
+                    <button onclick="location.href='./0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+                </div>
+            </div>
+        </div>
+        <hr />
+
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="loginButton">Prisijungti</button>
+        <!-- The Modal -->
+        <div id="loginModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">Prisijungimas</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                    </div>
+                    <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                    <button onclick="location.href='./Uindex.html'" class="button buttonSidebarSubmit" type="button">Prisijungti</button>
+                </div>
+            </div>
+        </div>
+        <!-- Trigger/Open The Modal -->
+        <button class="button buttonSidebar" id="registerButton">Registruotis</button>
+        <!-- The Modal -->
+        <div id="registerModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 style="color:white;">Registracija</h2>
+                </div>
+                <div class="modal-body">
+                    <label for="uname"><b>Vartotojo vardas</b></label>
+                    <input type="text" placeholder="Įrašyti vardą" name="uname" required>
+                    <div>
+                        <label for="psw"><b>Slaptažodis</b></label>
+                        <input type="password" placeholder="Įrašyti slaptažodį" name="psw" required>
+                        <div>
+                            <label for="email"><b>El. Paštas</b></label>
+                            <input type="text" placeholder="vardas@pastas.lt" name="email" required>
+                        </div>
+                    </div>
+                    <!-- čia bus redirect į aplanką kuriame bus visų puslapių kopijos su prisijungto vartotojo features added -->
+                    <button onclick="location.href='./Uindex.html'" class="button buttonSidebarSubmit" type="button">Registruoti paskyrą</button>
+                </div>
+            </div>
+        </div>
+        <script src="./popups.js"></script>
+        <hr />
+        <a href="./apie.html">Apie</a>
+        <a href="./kontaktai.html">Kontaktai</a>
+        <hr />
+        <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <h1>NeNetflix</h1>
+    <div class="grid-container">
+        <div><img class="poster" src="./images/5275892.jpg"></div>
+        <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/Zmca421urfo"></iframe></div>
+        <h2>
+        O.J.: Made in America<p class="summary">
+        A chronicle of the rise and fall of O.J. Simpson, whose high-profile murder
+        trial exposed the extent of American racial tensions, revealing a fractured
+        and divided nation.<br /><br />
+        Direktorius: Ezra Edelman<br />
+        Filmo trukmė: 7h 47m<br />
+        Išleidimo data: 2016-08-04<br />
+        Žanras: Dokumentika, biografija<br />
+    </p>
+        </h2>
+    </div>
+    <hr />
+    <table>
+        <tr>
+            <th>Vardas</th>
+            <th>Veikėjas</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000717">Kareem Abdul-Jabbar</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm8708944">Mike Albanese</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000738">Muhammad Ali</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0004701">Marcus Allen</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0037735">Bea Arthur</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0047258">F. Lee Bailey</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm1922497">Danny Bakewell</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0053676">Paula Barbieri</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0057270">Rona Barrett</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm8750054">Joe Bell</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm8712555">Carrie Bess</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0103417">Tom Bradley</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm1424463">Nicole Brown Simpson</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm0000987">Jim Brown</a></td>
+            <td>Vadino save</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.imdb.com/name/nm64051345">Tanya Brown</a></td>
+            <td>Vadino save</td>
+        </tr>
+    </table>
+    <h2>Filmo siužetas</h2>
+    <p>
+        It is the defining cultural tale of modern America - a saga of race, celebrity,
+        media, violence, and the criminal justice system. And two decades after its
+        unforgettable climax, it continues to fascinate, polarize, and even, yes, develop
+        new chapters. Now, the producers of ESPN's award-winning "30 for 30" have made it
+        the subject of their first documentary-event and most ambitious project yet. From
+        Peabody and Emmy-award winning director Ezra Edelman, it's "O.J.: Made in America,
+        " a 10-hour multi-part production coming summer of 2016. To most observers,
+        it's a story that began the night Nicole Brown Simpson and Ronald Goldman
+        were brutally murdered outside her Brentwood apartment. But as "O.J." lays bare,
+        to truly grasp the significance of what happened not just that night, but the
+        epic chronicle to follow, one has to travel back to a much different, much earlier
+        origin point, at not the end, but the beginning of the 20th century, when
+        African-Americans began migrating to California ...
+    </p>
+    <hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 8,6/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>96</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 8,9/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 4/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $5,000,000 (apytiksliai)</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt5275892/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <p>Prisijunkite prie savo paskyros, norėdami žiūrėti vartotojų komentarus.</p>
+</body>
+</html>

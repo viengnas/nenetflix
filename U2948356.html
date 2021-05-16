@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="stylesheet" href="./comments.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+<script src="./main.js"></script>
+
+<div id="meniu" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="./images/logosmall.png" alt="NeNetflix">
+  <hr />
+  <p class="generalText">Sveiki, Ignas. <i class="fa fa-id-badge"></i></p>
+  <a href="./Uprofile.html">Jūsų profilis</a>
+  <a href="./index.html">Atsijungti</a>
+  <hr />
+  <a href="./Uindex.html">Pradžia</a>
+  <a href="./Urekomendacijos.html">Rasti filmą</a>
+  <!-- Trigger/Open The Modal -->
+  <button class="button buttonSidebar" id="searchButton">Paieška</button>
+  <!-- The Modal -->
+  <div id="searchModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+          </div>
+          <div class="modal-body">
+              <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+              <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+              <!-- čia bus redirect į lempinį filmą (fake search) -->
+              <button onclick="location.href='./U0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+          </div>
+      </div>
+  </div>
+  <hr />
+  <a href="./Uapie.html">Apie</a>
+  <a href="./Ukontaktai.html">Kontaktai</a>
+  <hr />
+  <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<h1>NeNetflix</h1>
+<div class="grid-container">
+    <div><img class="poster" src="./images/2948356.jpg"></div>
+    <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/g9lmhBYB11U"></iframe></div>
+    <h2>Zootopia<p class="summary">
+            In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist
+            fox must work together to uncover a conspiracy.<br /><br />
+            Direktorius: Milos Forman<br />
+            Filmo trukmė: 1h 48m<br />
+            Išleidimo data: 2016-05-04<br />
+            Žanras: Animacija, komedija<br />
+        </p>
+        <button class="buttonWatch" id="watchButton"><i class="fa fa-eye"></i> Žiūrėti filmą</button>
+        <button onclick="location.href='./index.html'" class="buttonDownload" type="button"><i class="fa fa-download"></i> Atsisiųsti filmą</button>
+    </h2>
+  </div>
+  <div id="watchModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-body">
+          <div>
+            <hr />
+            <iframe style="border: none; width: 100%; height: 500px;" src="https://www.youtube.com/embed/g9lmhBYB11U"></iframe>
+            <hr />
+          </div>
+        </div>
+    </div>
+</div>
+<script src="./popupLoggedIn.js"></script>
+  <hr />
+  <table>
+      <tr>
+          <th>Vardas</th>
+          <th>Veikėjas</th>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0329481">Ginnifer Goodwin</a></td>
+          <td>Judy Hopps (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0000867">Jason Bateman</a></td>
+          <td>Nick Wilde (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0252961">Idris Elba</a></td>
+          <td>Chief Bogo (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm2809577">Jenny Slate</a></td>
+          <td>Bellwether (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm1535594">Nate Torrence</a></td>
+          <td>Clawhauser (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0001372">Bonnie Hunt</a></td>
+          <td>Bonnie Hopps (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0482141">Don Lake</a></td>
+          <td>Stu Hopps (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0001045">Tommy Chong</a></td>
+          <td>Yax (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0799777">J.K. Simmons</a></td>
+          <td>Mayor Lionheart (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0818055">Octavia Spencer</a></td>
+          <td>Mrs. Otterton (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0876138">Alan Tudyk</a></td>
+          <td>Duke Weaselton (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0787680">Shakira</a></td>
+          <td>Gazelle (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0675442">Raymond S. Persi</a></td>
+          <td>Flash / Officer Higgins (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm5415922">Della Saba</a></td>
+          <td>Young Hopps (voice)</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0005606">Maurice LaMarche</a></td>
+          <td>Mr. Big (voice)</td>
+      </tr>
+  </table>
+  <h2>Filmo siužetas</h2>
+  <p>
+        From the largest elephant to the smallest shrew, the city of Zootopia is a
+        mammal metropolis where various animals live and thrive. When Judy Hopps becomes
+        the first rabbit to join the police force, she quickly learns how tough it is to
+        enforce the law. Determined to prove herself, Judy jumps at the opportunity to
+        solve a mysterious case. Unfortunately, that means working with Nick Wilde, a wily
+        fox who makes her job even harder.
+    </p>
+    <hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 4,4/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>78</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 8,0/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 3/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $150,000,000 (apytiksliai)</p>
+    <p class="generalText"><b>Atidarymo savaitę uždirbo:</b> $75,063,401</p>
+    <p class="generalText"><b>Bendras pelnas JAV:</b> $341,268,248</p>
+    <p class="generalText"><b>Bendras pelnas įskaitant užsienį:</b> $1,023,792,558</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt2948356/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <!-- comments container -->
+    <div class="comment_block">
+        <!-- used by #{user} to create a new comment -->
+        <div class="create_new_comment">
+         <!-- current #{user} avatar -->
+          <div class="user_avatar">
+            <img src="./images/avatar1.png">
+          </div><!-- the input field --><div class="input_comment">
+            <input type="text" placeholder="Rašykite komentarą...">
+          </div>
+        </div>
+  
+        <!-- new comment -->
+        <div class="new_comment">
+         <!-- build comment -->
+          <ul class="user_comment">
+            <!-- current #{user} avatar -->
+            <div class="user_avatar">
+              <img src="./images/avatar2.png">
+            </div><!-- the comment body --><div class="comment_body">
+              <p class="summary">Mano mėgstamiausias filmas!!!!!!</p>
+            </div>
+            <!-- comments toolbar -->
+            <div class="comment_toolbar">
+              <!-- inc. date and time -->
+              <div class="comment_details">
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> 13:27</li>
+                  <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                  <li><i class="fa fa-pencil"></i> <span class="user">Ignė</span></li>
+                </ul>
+              </div><!-- inc. share/reply and love --><div class="comment_tools">
+                <ul>
+                  <li><i class="fa fa-share-alt"></i></li>
+                  <li><i class="fa fa-reply"></i></li>
+                  <li><i class="fa fa-heart love"></i></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- end of comment -->
+  
+        <!-- new comment -->
+        <div class="new_comment">
+          <!-- build comment -->
+           <ul class="user_comment">
+             <!-- current #{user} avatar -->
+             <div class="user_avatar">
+               <img src="./images/avatar1.png">
+             </div><!-- the comment body --><div class="comment_body">
+               <p class="summary">10/10.</p>
+             </div>
+             <!-- comments toolbar -->
+             <div class="comment_toolbar">
+               <!-- inc. date and time -->
+               <div class="comment_details">
+                 <ul>
+                   <li><i class="fa fa-clock-o"></i> 13:28</li>
+                   <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                   <li><i class="fa fa-pencil"></i> <span class="user">Ignas</span></li>
+                 </ul>
+               </div><!-- inc. share/reply and love --><div class="comment_tools">
+                 <ul>
+                   <li><i class="fa fa-share-alt"></i></li>
+                   <li><i class="fa fa-reply"></i></li>
+                   <li><i class="fa fa-heart love"></i></li>
+                 </ul>
+               </div>
+             </div>
+         </div>
+         <!-- end of comment -->
+    </div>
+</body>
+</html>

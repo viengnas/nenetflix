@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="stylesheet" href="./comments.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+<script src="./main.js"></script>
+
+<div id="meniu" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="./images/logosmall.png" alt="NeNetflix">
+  <hr />
+  <p class="generalText">Sveiki, Ignas. <i class="fa fa-id-badge"></i></p>
+  <a href="./Uprofile.html">Jūsų profilis</a>
+  <a href="./index.html">Atsijungti</a>
+  <hr />
+  <a href="./Uindex.html">Pradžia</a>
+  <a href="./Urekomendacijos.html">Rasti filmą</a>
+  <!-- Trigger/Open The Modal -->
+  <button class="button buttonSidebar" id="searchButton">Paieška</button>
+  <!-- The Modal -->
+  <div id="searchModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+          </div>
+          <div class="modal-body">
+              <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+              <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+              <!-- čia bus redirect į lempinį filmą (fake search) -->
+              <button onclick="location.href='./U0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+          </div>
+      </div>
+  </div>
+  <hr />
+  <a href="./Uapie.html">Apie</a>
+  <a href="./Ukontaktai.html">Kontaktai</a>
+  <hr />
+  <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<h1>NeNetflix</h1>
+<div class="grid-container">
+    <div><img class="poster" src="./images/5275892.jpg"></div>
+    <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/Zmca421urfo"></iframe></div>
+    <h2>O.J.: Made in America<p class="summary">
+            A chronicle of the rise and fall of O.J. Simpson, whose high-profile murder
+            trial exposed the extent of American racial tensions, revealing a fractured
+            and divided nation.<br /><br />
+            Direktorius: Ezra Edelman<br />
+            Filmo trukmė: 7h 47m<br />
+            Išleidimo data: 2016-08-04<br />
+            Žanras: Dokumentika, biografija<br />
+        </p>
+        <button class="buttonWatch" id="watchButton"><i class="fa fa-eye"></i> Žiūrėti filmą</button>
+        <button onclick="location.href='./index.html'" class="buttonDownload" type="button"><i class="fa fa-download"></i> Atsisiųsti filmą</button>
+    </h2>
+  </div>
+  <div id="watchModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-body">
+          <div>
+            <hr />
+            <iframe style="border: none; width: 100%; height: 500px;" src="https://www.youtube.com/embed/Zmca421urfo"></iframe>
+            <hr />
+          </div>
+        </div>
+    </div>
+</div>
+<script src="./popupLoggedIn.js"></script>
+  <hr />
+  <table>
+      <tr>
+          <th>Vardas</th>
+          <th>Veikėjas</th>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0000717">Kareem Abdul-Jabbar</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm8708944">Mike Albanese</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0000738">Muhammad Ali</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0004701">Marcus Allen</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0037735">Bea Arthur</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0047258">F. Lee Bailey</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm1922497">Danny Bakewell</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0053676">Paula Barbieri</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0057270">Rona Barrett</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm8750054">Joe Bell</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm8712555">Carrie Bess</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0103417">Tom Bradley</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm1424463">Nicole Brown Simpson</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0000987">Jim Brown</a></td>
+          <td>Vadino save</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm64051345">Tanya Brown</a></td>
+          <td>Vadino save</td>
+      </tr>
+  </table>
+  <h2>Filmo siužetas</h2>
+  <p>
+        It is the defining cultural tale of modern America - a saga of race, celebrity,
+        media, violence, and the criminal justice system. And two decades after its
+        unforgettable climax, it continues to fascinate, polarize, and even, yes, develop
+        new chapters. Now, the producers of ESPN's award-winning "30 for 30" have made it
+        the subject of their first documentary-event and most ambitious project yet. From
+        Peabody and Emmy-award winning director Ezra Edelman, it's "O.J.: Made in America,
+        " a 10-hour multi-part production coming summer of 2016. To most observers,
+        it's a story that began the night Nicole Brown Simpson and Ronald Goldman
+        were brutally murdered outside her Brentwood apartment. But as "O.J." lays bare,
+        to truly grasp the significance of what happened not just that night, but the
+        epic chronicle to follow, one has to travel back to a much different, much earlier
+        origin point, at not the end, but the beginning of the 20th century, when
+        African-Americans began migrating to California ...
+    </p>
+    <hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 8,6/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>96</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 8,9/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 4/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $5,000,000 (apytiksliai)</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt5275892/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <!-- comments container -->
+    <div class="comment_block">
+        <!-- used by #{user} to create a new comment -->
+        <div class="create_new_comment">
+         <!-- current #{user} avatar -->
+          <div class="user_avatar">
+            <img src="./images/avatar1.png">
+          </div><!-- the input field --><div class="input_comment">
+            <input type="text" placeholder="Rašykite komentarą...">
+          </div>
+        </div>
+  
+        <!-- new comment -->
+        <div class="new_comment">
+         <!-- build comment -->
+          <ul class="user_comment">
+            <!-- current #{user} avatar -->
+            <div class="user_avatar">
+              <img src="./images/avatar2.png">
+            </div><!-- the comment body --><div class="comment_body">
+              <p class="summary">Mano mėgstamiausias filmas!!!!!!</p>
+            </div>
+            <!-- comments toolbar -->
+            <div class="comment_toolbar">
+              <!-- inc. date and time -->
+              <div class="comment_details">
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> 13:27</li>
+                  <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                  <li><i class="fa fa-pencil"></i> <span class="user">Ignė</span></li>
+                </ul>
+              </div><!-- inc. share/reply and love --><div class="comment_tools">
+                <ul>
+                  <li><i class="fa fa-share-alt"></i></li>
+                  <li><i class="fa fa-reply"></i></li>
+                  <li><i class="fa fa-heart love"></i></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- end of comment -->
+  
+        <!-- new comment -->
+        <div class="new_comment">
+          <!-- build comment -->
+           <ul class="user_comment">
+             <!-- current #{user} avatar -->
+             <div class="user_avatar">
+               <img src="./images/avatar1.png">
+             </div><!-- the comment body --><div class="comment_body">
+               <p class="summary">10/10.</p>
+             </div>
+             <!-- comments toolbar -->
+             <div class="comment_toolbar">
+               <!-- inc. date and time -->
+               <div class="comment_details">
+                 <ul>
+                   <li><i class="fa fa-clock-o"></i> 13:28</li>
+                   <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                   <li><i class="fa fa-pencil"></i> <span class="user">Ignas</span></li>
+                 </ul>
+               </div><!-- inc. share/reply and love --><div class="comment_tools">
+                 <ul>
+                   <li><i class="fa fa-share-alt"></i></li>
+                   <li><i class="fa fa-reply"></i></li>
+                   <li><i class="fa fa-heart love"></i></li>
+                 </ul>
+               </div>
+             </div>
+         </div>
+         <!-- end of comment -->
+    </div>
+</body>
+</html>

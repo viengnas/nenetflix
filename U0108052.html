@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sidebarPopups.css">
+    <link rel="stylesheet" href="./comments.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>NeNetflix</title>
+</head>
+<body>
+<script src="./main.js"></script>
+
+<div id="meniu" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <img src="./images/logosmall.png" alt="NeNetflix">
+  <hr />
+  <p class="generalText">Sveiki, Ignas. <i class="fa fa-id-badge"></i></p>
+  <a href="./Uprofile.html">Jūsų profilis</a>
+  <a href="./index.html">Atsijungti</a>
+  <hr />
+  <a href="./Uindex.html">Pradžia</a>
+  <a href="./Urekomendacijos.html">Rasti filmą</a>
+  <!-- Trigger/Open The Modal -->
+  <button class="button buttonSidebar" id="searchButton">Paieška</button>
+  <!-- The Modal -->
+  <div id="searchModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2 style="color:white;">„NeNetflix“ katalogo paieška</h2>
+          </div>
+          <div class="modal-body">
+              <label for="uname"><b>Įveskite filmo pavadinimą arba raktažodžius:</b></label>
+              <input type="text" placeholder="The Shawshank Redemption" name="search" required>
+              <!-- čia bus redirect į lempinį filmą (fake search) -->
+              <button onclick="location.href='./U0111161.html'" class="button buttonSidebarSubmit" type="button">Ieškoti</button>
+          </div>
+      </div>
+  </div>
+  <hr />
+  <a href="./Uapie.html">Apie</a>
+  <a href="./Ukontaktai.html">Kontaktai</a>
+  <hr />
+  <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<h1>NeNetflix</h1>
+<div class="grid-container">
+    <div><img class="poster" src="./images/0108052.jpg"></div>
+    <div><iframe width="477" height="268" style="border:none;" src="https://www.youtube.com/embed/gG22XNhtnoY"></iframe></div>
+    <h2>Schindler's List<p class="summary">
+            In German-occupied Poland during World War II, industrialist Oskar Schindler
+            gradually becomes concerned for his Jewish workforce after witnessing their
+            persecution by the Nazis.<br /><br />
+            Direktorius: Steven Spielberg<br />
+            Filmo trukmė: 3h 15m<br />
+            Išleidimo data: 1994-02-04<br />
+            Žanras: Biografija, istorinis<br />
+        </p>
+        <button class="buttonWatch" id="watchButton"><i class="fa fa-eye"></i> Žiūrėti filmą</button>
+        <button onclick="location.href='./index.html'" class="buttonDownload" type="button"><i class="fa fa-download"></i> Atsisiųsti filmą</button>
+    </h2>
+  </div>
+  <div id="watchModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-body">
+          <div>
+            <hr />
+            <iframe style="border: none; width: 100%; height: 500px;" src="https://www.youtube.com/embed/gG22XNhtnoY"></iframe>
+            <hr />
+          </div>
+        </div>
+    </div>
+</div>
+<script src="./popupLoggedIn.js"></script>
+  <hr />
+  <table>
+      <tr>
+          <th>Vardas</th>
+          <th>Veikėjas</th>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0000553">Liam Neeson</a></td>
+          <td>Oskar Schindler</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0001426">Ben Kingsley</a></td>
+          <td>Itzhak Stern</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0000146">Ralph Fiennes</a></td>
+          <td>Amon Goeth</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0328751">Caroline Goodall</a></td>
+          <td>Emilie Schindler</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0755974">Jonathan Sagall</a></td>
+          <td>Poldek Pfefferberg</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0001110">Embeth Davidtz</a></td>
+          <td>Helen Hirsch</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0311343">Malgorzata Gebel</a></td>
+          <td>Wiktoria Klonowska</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0506616">Shmuel Levy</a></td>
+          <td>Wilek Chilowicz</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0411980">Mark Ivanir</a></td>
+          <td>Marcel Goldberg</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0534151">Béatrice Macola</a></td>
+          <td>Ingrid</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0786614">Andrzej Seweryn</a></td>
+          <td>Julian Scherner</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0903110">Friedrich von Thun</a></td>
+          <td>Rolf Czurda</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0525181">Krzysztof Luft</a></td>
+          <td>Herman Toffel</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0624582">Harry Nehring</a></td>
+          <td>Leo John</td>
+      </tr>
+      <tr>
+          <td><a href="https://www.imdb.com/name/nm0919256">Norbert Weisser</a></td>
+          <td>Albert Hujar</td>
+      </tr>
+  </table>
+  <h2>Filmo siužetas</h2>
+   <p>
+        Oskar Schindler is a vain and greedy German businessman who becomes an unlikely
+        humanitarian amid the barbaric German Nazi reign when he feels compelled to turn
+        his factory into a refuge for Jews. Based on the true story of Oskar Schindler who
+        managed to save about 1100 Jews from being gassed at the Auschwitz concentration
+        camp, it is a testament to the good in all of us.
+    </p>
+    <hr />
+    <h2>Filmo kritikų reitingai</h2>
+    <p class="generalText"><b>„NeNetflix“ vartotojų:</b> &#11088; 7,4/10</p>
+    <p class="generalText"><b>Metascore:</b> <span>94</span></p>
+    <p class="generalText"><b>IMDb vartotojų:</b> &#11088; 8,9/10</p>
+    <p class="generalText"><b>Roger Ebert:</b> &#11088; 4/5</p>
+    <hr />
+    <h2>Bilietų kasos informacija</h2>
+    <p class="generalText"><b>Biudžetas:</b> $22,000,000 (apytiksliai)</p>
+    <p class="generalText"><b>Atidarymo savaitę uždirbo:</b> $656,636</p>
+    <p class="generalText"><b>Bendras pelnas JAV:</b> $96,898,818</p>
+    <p class="generalText"><b>Bendras pelnas įskaitant užsienį:</b> $322,161,245</p>
+    <!-- <p class="generalText">Šaltinis: <a href="https://www.imdb.com/title/tt0108052/">imdb.com</a>.</p> -->
+    <hr />
+    <h1>Komentarai</h1>
+    <!-- comments container -->
+    <div class="comment_block">
+        <!-- used by #{user} to create a new comment -->
+        <div class="create_new_comment">
+         <!-- current #{user} avatar -->
+          <div class="user_avatar">
+            <img src="./images/avatar1.png">
+          </div><!-- the input field --><div class="input_comment">
+            <input type="text" placeholder="Rašykite komentarą...">
+          </div>
+        </div>
+  
+        <!-- new comment -->
+        <div class="new_comment">
+         <!-- build comment -->
+          <ul class="user_comment">
+            <!-- current #{user} avatar -->
+            <div class="user_avatar">
+              <img src="./images/avatar2.png">
+            </div><!-- the comment body --><div class="comment_body">
+              <p class="summary">Mano mėgstamiausias filmas!!!!!!</p>
+            </div>
+            <!-- comments toolbar -->
+            <div class="comment_toolbar">
+              <!-- inc. date and time -->
+              <div class="comment_details">
+                <ul>
+                  <li><i class="fa fa-clock-o"></i> 13:27</li>
+                  <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                  <li><i class="fa fa-pencil"></i> <span class="user">Ignė</span></li>
+                </ul>
+              </div><!-- inc. share/reply and love --><div class="comment_tools">
+                <ul>
+                  <li><i class="fa fa-share-alt"></i></li>
+                  <li><i class="fa fa-reply"></i></li>
+                  <li><i class="fa fa-heart love"></i></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <!-- end of comment -->
+  
+        <!-- new comment -->
+        <div class="new_comment">
+          <!-- build comment -->
+           <ul class="user_comment">
+             <!-- current #{user} avatar -->
+             <div class="user_avatar">
+               <img src="./images/avatar1.png">
+             </div><!-- the comment body --><div class="comment_body">
+               <p class="summary">10/10.</p>
+             </div>
+             <!-- comments toolbar -->
+             <div class="comment_toolbar">
+               <!-- inc. date and time -->
+               <div class="comment_details">
+                 <ul>
+                   <li><i class="fa fa-clock-o"></i> 13:28</li>
+                   <li><i class="fa fa-calendar"></i> 2021-05-04</li>
+                   <li><i class="fa fa-pencil"></i> <span class="user">Ignas</span></li>
+                 </ul>
+               </div><!-- inc. share/reply and love --><div class="comment_tools">
+                 <ul>
+                   <li><i class="fa fa-share-alt"></i></li>
+                   <li><i class="fa fa-reply"></i></li>
+                   <li><i class="fa fa-heart love"></i></li>
+                 </ul>
+               </div>
+             </div>
+         </div>
+         <!-- end of comment -->
+    </div>
+</body>
+</html>
