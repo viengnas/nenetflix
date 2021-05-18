@@ -138,6 +138,29 @@ body {
   border: 2px solid black;
 }
 
+.grid-profile {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #4d86bb;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+/* 5 nuotraukų grid CSS */
+#hiddenGrid {
+  display: none;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #6c7f91;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+#hiddenGrid > div {
+  border: 2px solid black;
+}
+
 .blurDiv {
   filter: blur(4px);
 }
@@ -197,6 +220,11 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+input[type=file] {
+  background-color: #4CAF50;
+  border: 2px solid black;
 }
 
 /* Rutuliukai naudojami fono animacijai */
@@ -264,4 +292,17 @@ input[type=submit]:hover {
 /* Darker background on mouse-over */
 .buttonDownload:hover {
   background-color: #36b336;
+}
+
+.buttonRemove {
+  background-color: #e64343;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.buttonRemove:hover {
+  background-color: #852121;
 }

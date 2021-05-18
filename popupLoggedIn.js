@@ -8,7 +8,7 @@ btnS.onclick = function () {
 
 span[0].onclick = function () {
     modalS.style.display = "none";
-}   
+}
 
 if(document.getElementById("watchModal")) {
     var modalW = document.getElementById("watchModal");

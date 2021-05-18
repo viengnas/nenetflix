@@ -54,3 +54,7 @@ function submitContact() {
   alert('Jūsų žinutė gauta.\nĮ pastebėjimus atsakysime netrukus.');
   location.href='./index.html';
 }
+
+function showDiv(divId, element) {
+  document.getElementById(divId).style.display = element.value == "comedy" ? 'grid' : 'none';
+}

@@ -50,39 +50,28 @@
     <p>© NeNetflix, 2021. Autorinės teisės saugomos.</p>
 </div>
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-
     <h1>NeNetflix</h1>
-    <h2>Savaitės rekomendacijos</h2>
-    <hr />
-    <div class="grid-container">
-        <div><a href="./U0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>
-        <div><a href="./U0073486.html"><img class="poster" src="./images/0073486.jpg"></a></div>
-        <div><a href="./U0109830.html"><img class="poster" src="./images/0109830.jpg"></a></div>  
-        <div><a href="./U0446029.html"><img class="poster" src="./images/0446029.jpg"></a></div>
-        <div><a href="./U0266697.html"><img class="poster" src="./images/0266697.jpg"></a></div>
-    </div>
-    <hr />
-    <h2>Nauji filmai „NeNetflix“ kataloge</h2>
-    <hr />
-    <div class="grid-container">
-		<div><a href="./U0053291.html"><img class="poster" src="./images/0053291.jpg"></a></div>
-		<div><a href="./U0068646.html"><img class="poster" src="./images/0068646.jpg"></a></div>
-		<div><a href="./U0116629.html"><img class="poster" src="./images/0116629.jpg"></a></div>
-		<div><a href="./U0120338.html"><img class="poster" src="./images/0120338.jpg"></a></div>
-		<div><a href="./U0133093.html"><img class="poster" src="./images/0133093.jpg"></a></div>
-		<div><a href="./U0109830.html"><img class="poster" src="./images/0109830.jpg"></a></div> 
-		<div><a href="./U0073486.html"><img class="poster" src="./images/0073486.jpg"></a></div>
-		<div><a href="./U0387564.html"><img class="poster" src="./images/0387564.jpg"></a></div>
-		<div><a href="./U0111161.html"><img class="poster" src="./images/0111161.jpg"></a></div>
-		<div><a href="./U0266697.html"><img class="poster" src="./images/0266697.jpg"></a></div>
-		<div><a href="./U0446029.html"><img class="poster" src="./images/0446029.jpg"></a></div>
-		<div><a href="./U4154756.html"><img class="poster" src="./images/4154756.jpg"></a></div>
-		<div><a href="./U4154796.html"><img class="poster" src="./images/4154796.jpg"></a></div>
-        <div><a href="./U0102926.html"><img class="poster" src="./images/0102926.jpg"></a></div>
-        <div><a href="./U0108052.html"><img class="poster" src="./images/0108052.jpg"></a></div>
-        <div><a href="./U2948356.html"><img class="poster" src="./images/2948356.jpg"></a></div>
-        <div><a href="./U5275892.html"><img class="poster" src="./images/5275892.jpg"></a></div>
-    </div>
-    <hr />
+    <h2>Profilio informacijos redagavimas</h2>
+    <label for="fname">Vardas</label>
+    <input type="text" id="fname" name="firstname" placeholder="Ignas">
+
+    <label for="lname">Pavardė</label>
+    <input type="text" id="lname" name="lastname" placeholder="Kviliūnas">
+
+    <label for="bday">Gimimo data</label>
+    <input type="text" id="bday" name="birthday" placeholder="2000-05-12">
+
+    <label for="email">El. Paštas</label>
+    <input type="text" id="email" name="email" placeholder="ignas.kviliunas@ktu.edu">
+
+    <label for="avatar">Profilio nuotrauka</label>
+    <br /><br />
+    <input type="file" id="avatar" name="filename">
+    <br /><br />
+    <label for="subscription">Abonemento statusas</label>
+    <br /><br />
+    <button onclick="alert('Abonementas atšauktas.\nNuo šiol negalėsite žiūrėti filmų paslaugoje.');" class="buttonRemove" id="removeButton"><i class="fa fa-times"></i> Atšaukti abonementą</button>
+    <br /><br />
+    <button onclick="location.href='./Uprofile.html'" class="buttonWatch" id="watchButton"><i class="fa fa-arrow-left"></i> Atgal į paskyrą</button>
 </body>
 </html>
