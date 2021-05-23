@@ -58,3 +58,13 @@ function submitContact() {
 function showDiv(divId, element) {
   document.getElementById(divId).style.display = element.value == "comedy" ? 'grid' : 'none';
 }
+
+function payPal() {
+  window.open("https://www.paypal.com/lt/signin", '_blank');
+  location.href="./Uindex.html";
+}
+
+function paySera() {
+  window.open("https://bank.paysera.com/lt/login", '_blank');
+  location.href="./Uindex.html";
+}
